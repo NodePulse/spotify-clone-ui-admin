@@ -9,7 +9,7 @@ import Sidebar from "./components/Sidebar";
 import Navbar from "./components/Navbar";
 import axios from "axios";
 
-export const url = "https://spotify-clone-ui-backend.vercel.app";
+export const url = "https://spotify-clone-ui-backend.vercel.app/";
 axios.defaults.withCredentials = true;
 
 const App = () => {
