@@ -8,7 +8,7 @@ import ListAlbum from "./pages/ListAlbum";
 import Sidebar from "./components/Sidebar";
 import Navbar from "./components/Navbar";
 
-export const url = "https://spotify-clone-ui-backend-9kzitpqkr-sachin-bharbeys-projects.vercel.app";
+export const url = "https://spotify-clone-ui-backend.vercel.app";
 
 const App = () => {
   return (
