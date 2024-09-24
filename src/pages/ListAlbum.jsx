@@ -1,6 +1,5 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { url } from "../App";
 import toast from "react-hot-toast";
 
 const ListAlbum = () => {
@@ -8,7 +7,7 @@ const ListAlbum = () => {
 
   const fetchAlbums = async () => {
     try {
-      const response = await axios.get(`${url}/api/album/list`);
+      const response = await axios.get(`/api/album/list`);
 
       if (response.data.success) {
         setData(response.data.albums);
@@ -20,7 +19,7 @@ const ListAlbum = () => {
 
   const removeAlbum = async (id) => {
     try {
-      const response = await axios.post(`${url}/api/album/remove`, { id });
+      const response = await axios.post(`/api/album/remove`, { id });
       if (response.data.success) {
         toast.success(response.data.message);
         await fetchAlbums();

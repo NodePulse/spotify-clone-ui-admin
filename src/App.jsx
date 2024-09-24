@@ -7,10 +7,6 @@ import ListSong from "./pages/ListSong";
 import ListAlbum from "./pages/ListAlbum";
 import Sidebar from "./components/Sidebar";
 import Navbar from "./components/Navbar";
-import axios from "axios";
-
-export const url = "https://spotify-clone-ui-backend.vercel.app/";
-axios.defaults.url = url;
 
 const App = () => {
   return (
